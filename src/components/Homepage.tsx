@@ -40,55 +40,39 @@ export default function Homepage({
             gutterBottom
             sx={{ color: 'green', mt: 3 }}
           >
-            Fetch & cache data from 2 remote APIs test: <br />
-            The latest React version is {reactVersion}, and the latest NextJs
-            version is {nextJsVersion}
+            Отримання та кешування даних із 2 віддалених тестів API: <br />
+            Остання версія React — {reactVersion}, а остання — NextJs
+            версія {nextJsVersion}
             <Box sx={{ color: 'grey', fontSize: 10 }}>
-              On dev environment, you can see how long it takes on console, e.g.
-              getApiResponse: 0.05s
+              У середовищі розробника ви можете побачити, скільки часу це займає на консолі, напр.
+              getApiResponse: 0,05 с
             </Box>
           </Typography>
-
-          <Box sx={{ m: 5 }}>
-            <Link
-              href='https://github.com/AlexStack/nextjs-materia-mui-typescript-hook-form-scaffold-boilerplate-starter'
-              target='_blank'
-            >
-              See the Github repository page
-            </Link>
-          </Box>
-          <Box sx={{ m: 5 }}>
-            <Link
-              href='https://vercel.com/new/clone?s=https%3A%2F%2Fgithub.com%2FAlexStack%2Fnextjs-materia-mui-typescript-hook-form-scaffold-boilerplate-starter&showOptionalTeamCreation=false'
-              target='_blank'
-            >
-              Click here to deploy a demo site to your Vercel in 1 minute
-            </Link>
-          </Box>
           <Box sx={{ m: 5, a: { color: 'blue' } }}>
             <Link
               href='/api/test?from=github&nextjs=yes&mui=yes&tailwind=no'
               target='_blank'
             >
-              Test local NextJs API /api/test method GET with parameters
+              Тестуйте локальний API NextJs /api/метод тестування GET із параметрами
             </Link>
           </Box>
 
           <Box sx={{ m: 5 }}>
             <h4>
-              Test local NextJs API /api/test method POST with form variables
+              Перевірте локальний NextJs API /api/метод тестування POST зі змінними форми
             </h4>
             <ReactHookForm />
           </Box>
 
           <Box sx={{ m: 5 }}>
             <Link href='/test-page-not-exists'>
-              Test 404 page not found (mock file not exists)
+              Тестова сторінка 404 не знайдена (макетний файл не існує)
+
             </Link>
           </Box>
           <Box sx={{ m: 5 }}>
             <a href='/?slug=testError500'>
-              Test 500 error page (mock server side throw error)
+              Перевірте сторінку помилки 500 (імітована помилка на стороні сервера)
             </a>
           </Box>
         </Box>

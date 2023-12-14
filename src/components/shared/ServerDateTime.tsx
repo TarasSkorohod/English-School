@@ -8,7 +8,7 @@ dayjs.extend(timezone);
 
 const ServerDateTime = ({
   cityTimezone,
-  timeFormat = 'dddd, MMMM D, YYYY h:mm:ss A',
+  timeFormat = 'dddd, MMMM D, YYYY HH:mm',
   color,
   date,
 }: {
